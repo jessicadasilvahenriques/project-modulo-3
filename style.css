@@ -5,12 +5,23 @@
 }
 
 @font-face {
-  font-family: 'Gilroy';
+  font-family: 'Gilroy-Bold';
   src: url('./font/Gilroy-Bold.ttf') format('opentype');
 }
 
-body{
-  font-family:'Gilroy', sans-serif;
+@font-face {
+  font-family: 'Gilroy-Light';
+  src: url('./font/Gilroy-Light.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('./font/Inter-Regular.ttf') format('opentype');
+}
+
+@font-face {
+  font-family: 'DMSans';
+  src: url('./font/DMSans-Regular.ttf') format('opentype');
 }
 
 
@@ -35,10 +46,13 @@ body{
   justify-content: space-between;
   align-items: center;
   color: white;
+  font-size: 18px;
+  font-family: 'Gilroy-Light';
 }
 
 .logo {
   font-size: 28px;
+  font-family: 'Gilroy-Bold';
   font-weight: bold;
   color: white;
 }
@@ -66,14 +80,16 @@ body{
 }
 
 .hero h1 {
-  font-size: 75px;
+  font-size: 80px;
+  font-family: 'Gilroy-Bold';
   max-width: 900px;
   line-height: 1;
   margin-bottom: 20px;
 }
 
 .hero p {
-  font-size: 18px;
+  font-size: 24px;
+   font-family: 'Gilroy-Light'  ;
   max-width: 600px;
   margin-top: 0px;
 }
@@ -96,6 +112,7 @@ body{
 
 .title h1{
   font-size:42px;
+  font-family: 'Gilroy-Bold';
   line-height:1.1;
   color:#1E1E1E;
 }
@@ -103,7 +120,6 @@ body{
 .cards-container{
   display:flex;
   gap:50px;
-
   flex:1;
 }
 
@@ -114,21 +130,25 @@ body{
 
 .card h3{
   font-size:24px;
+  font-family: 'Gilroy-Bold';
   margin-bottom:20px;
   color:#1E1E1E;
 }
 
 .card p{
   font-size:16px;
+  font-family: 'Gilroy-Light';
   line-height:1.7;
   color:#1E1E1E;
   margin-bottom:25px;
 }
 
 .card a{
+  font-size:14px;  
+  font-family: 'Gilroy-Light'; 
   text-decoration:none;
   color:#E58411;
-  font-size:14px;   
+ 
 }
 
 
@@ -136,16 +156,16 @@ body{
 
 .section2{
   padding:80px;
-
   background:#f7f7f7;
-
   display:flex;
   flex-direction:column;
   align-items:center;
+  padding:80px 60px;
 }
 
 .section2 .title h1{
   font-size:42px;
+  font-family: 'Gilroy-Bold';
   color:#1E1E1E;
   margin-bottom:30px;
 }
@@ -160,12 +180,13 @@ body{
 }
 
 .navigation button{
+  font-size:18px;
+  font-family: 'Gilroy-Light';
+  color:#6f6f6f;
   border:none;
   background:transparent;
   padding:12px 25px;
   border-radius:30px;
-  font-size:16px;
-  color:#6f6f6f;
   cursor:pointer;
   transition:0.3s;
 }
@@ -178,19 +199,6 @@ body{
 
 .navigation button:hover{
   background:white;
-}
-
-.section2{
-  display:flex;
-  align-items:center;
-  gap:80px;
-  padding:80px 60px;
-  background:#F7F7F7;
-}
-
-.title{
-  font-size:42px;
-  width:300px;
 }
 
 .cards-products{
@@ -227,7 +235,7 @@ body{
 
 .category h2{
   font-size:16.76px;
-  font-weight:400;
+  font-family: 'Inter';
   color:#8D8D8D;
 }
 
@@ -237,7 +245,8 @@ body{
 
 .name-product h2{
   font-size:21.33px;
-  font-weight:400;
+  font-family: 'Inter';
+  font-weight:bold;
   color:#0D1B39;
 }
 
@@ -250,6 +259,7 @@ body{
 
 .price p{
   font-size:21.33px;
+  font-family: 'Inter';
   font-weight:bold;
   color: #0D1B39;
 }
@@ -333,19 +343,21 @@ body{
 .subtitle{
     color:#E58411;
     font-size:18px;
-    font-weight:700;
+    font-family: 'Gilroy-Bold';
     letter-spacing:2px;
 }
 
 .experience-content h2{
     margin:15px 0 25px;
     font-size:42px;
+    font-family: 'Gilroy-Bold';
     line-height:1.2;
     color:#1E1E1E;
 }
 
 .experience-content p{
     font-size:18px;
+    font-family: 'Gilroy-Light';
     color:#1E1E1E;
     line-height:1.8;
     margin-bottom:30px;
@@ -357,6 +369,7 @@ body{
     display:inline-flex;
     gap:15px;
     align-items:center;
+    font-family: 'Gilroy-Light';
 }
 
 
@@ -375,6 +388,7 @@ body{
 .subtitle{
     color:#E58411;
     font-size:18px;
+    font-family: 'Gilroy-Bold';
     font-weight:700;
 
 }
@@ -382,12 +396,14 @@ body{
 .materials-content h2{
     margin:15px 0 25px;
     font-size:42px;
+    font-family: 'Gilroy-Bold';
     line-height:1.2;
     color:#1E1E1E;
 }
 
 .materials-content p{
     font-size:18px;
+    font-family: 'Gilroy-Light';
     color:#1E1E1E;
     line-height:1.8;
     margin-bottom:30px;
@@ -399,6 +415,7 @@ body{
     display:inline-flex;
     gap:15px;
     align-items:center;
+    font-family: 'Gilroy-Light';
 }
 
 .materials-images{
@@ -461,6 +478,7 @@ body{
 
 .logo-footer{
   font-size:28px;
+  font-family: 'Gilroy-Bold';
   font-weight:700;
   color:#1E1E1E;
   margin-bottom:25px;
@@ -468,6 +486,7 @@ body{
 
 .paragraph-footer h3{
   font-size:15px;
+  font-family: 'Gilroy-Light';
   font-weight:400;
   line-height:1.8;
   color:#1E1E1E;
@@ -485,7 +504,7 @@ body{
 .title-furniture h3,
 .title-social-media h3{
   font-size:17px;
-  font-weight:500;
+  font-family: 'DMSans';
   color:#F6973F;
   margin-bottom:25px;
 }
@@ -501,12 +520,14 @@ body{
 .services-list p,
 .furniture-list p{
   font-size:15px;
+  font-family: 'Gilroy-Light';
   color:#1E1E1E;
 }
 
 .social-media-list a{
   text-decoration:none;
   font-size:15px;
+  font-family: 'Gilroy-Light';
   color:#1E1E1E;
 }
 
